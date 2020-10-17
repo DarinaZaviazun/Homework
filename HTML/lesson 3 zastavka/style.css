@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #009bee;
+    position: absolute;               
+    top: 50%;
+    right: 32%;                         
+    transform: translate(0, -50%);   
+}
+div{
+    background-color: #f0f0f0; 
+    border-radius: 7px;
+}
+
+.for-numbers-class{
+    font-size: 50pt; 
+    color: orange;
+    font-weight: bold;
+    margin: 0px;
+}
+
+p {
+    color: black;
+    font-size: 14pt;
+    margin: 0px; 
+}
+
+#color-id{
+    color: red;
+    font-weight: bolder;
+    font-size: 16pt;
+}
+
+#pozition{
+    position: absolute;               
+    top: -100px;
+    left: -300px;                         
+    transform: translate(0, -50%); 
+}
+
+#rotate-img {
+    position: absolute;               
+    top: -220px;
+    left: 420px;                         
+    transform: translate(0, -50%);
+    animation-name: rotation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -moz-animation: rotation 15s linear infinite;
+    -o-animation: rotation 15s linear infinite;
+    -webkit-animation: rotation 15s linear infinite;
+    animation: rotation 15s linear infinite;
+}
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+        
+      }
+    100% { 
+        transform:rotate(360deg);
+    }
+}
