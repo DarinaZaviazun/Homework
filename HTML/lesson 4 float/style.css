@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.target1{
+    background-color:black; 
+    width: 610px;
+    height: 610px;
+    position: absolute;
+    z-index: -1; /*можна зробити через z-index: або позішн;*/
+}
+
+.target2{
+    background-color:orange; 
+    width: 600px;
+    height: 100px;
+    /*position: relative;*/
+    }
+
+.target3{
+    background-color:red;
+    width: 150px;
+    height: 400px;
+    /*position: relative;*/
+    float: left;
+}
+
+.target4{
+    background-color:green; 
+    width: 150px;
+    height: 400px;
+    /*position: relative;*/
+    float: left;
+}
+
+.target5{
+    background-color:blue; 
+    width: 150px;
+    height: 400px;
+    /*position: relative;*/
+    float: left;
+}
+
+.target6{
+    background-color:yellow; 
+    width: 150px;
+    height: 400px;
+    /*position: relative;*/
+    float: left;
+}
+
+.target7{
+    background-color:orange; 
+    width: 600px;
+    height: 100px;
+    /*position: relative;*/
+clear: both;
+}
