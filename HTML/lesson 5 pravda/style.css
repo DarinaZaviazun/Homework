@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 160px;
+    border-bottom: 1px solid darkgray;
+}
+
+.text{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+}
+.text1{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    color: #900022;
+}
+
+.text2{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: white;
+}
+.text3{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+.text4{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    margin-left: 30px;
+}
+.text5{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #900022;
+}
+.text6{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    text-align: center; /* пункты и текст горизонтально по центру */
+    padding: 0;
+    margin: 11px;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav li:hover {
+    color: chocolate;
+    cursor: pointer;
+}
+
+.polosa{
+    background-color: #7E0019;
+    height: 90px;
+    margin-top: 0;
+    padding-left: 85px;
+    padding-right: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block{
+    margin: 10px;
+}
+.centr{
+    flex-grow: 1;
+    margin-left: 25%;
+}
+
+.div_menu1 { /*poloski menu*/
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 3px;
+}
+
+.btn button{
+    background-color: #B30C1D;
+    border-radius: 20px;
+    padding: 8px;
+    border: 2px solid white;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    color: white;
+    margin-left: 10px;
+}
