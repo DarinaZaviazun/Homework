@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+}
+
+.div1{
+    margin: 25px;
+    background-color: black;
+    height: 700px;
+    width: 700px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div2{
+    background-color: orange;
+    width: 700px;
+    height: 150px;
+    display: flex;
+
+}
+.div3{
+    background-color: red;
+    width: 175px;
+    height: 400px;
+    display: flex;
+    align-self: center;
+}
+.div4{
+    background-color: green;
+    width: 175px;
+    height: 400px;
+    display: flex;
+    align-self: center;
+}
+.div5{
+    background-color: blue;
+    width: 175px;
+    height: 400px;
+    display: flex;
+    align-self: center;
+}
+.div6{
+    background-color: darkorchid;
+    width: 175px;
+    height: 400px;
+    display: flex;
+    align-self: center;
+}
