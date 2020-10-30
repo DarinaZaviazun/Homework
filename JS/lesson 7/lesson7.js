@@ -93,9 +93,13 @@
 
 // for (let i = 0; i < 3; i++){ //godyny
 //     for(let j = 0; j < 60; j++){
-//         if (i == 2 && j == 20)
-//             break;
+//         if (i == 2 && j == 20){
+//             console.log(i + " chasov " + j + " minut " + " 0 secund")
+//             document.write(i + " chasov " + j + " minut " + " 0 secund <p>")
+//             break;}
 //         for (let k = 0; k < 60; k++){
+//
+//
 //         console.log(i + " chasov " + j + " minut " + k + " secund")
 //         document.write(i + " chasov " + j + " minut " + k + " secund <p>")
 //         }}}
