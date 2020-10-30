@@ -54,7 +54,7 @@ header{
     justify-content: center;
     text-align: center; /* пункты и текст горизонтально по центру */
     padding: 0;
-    margin: 11px;
+    line-height: 35px;
 }
 
 .nav li {
