@@ -109,34 +109,51 @@
 // }
 
 // -- наисать функцию калькулятора с 3мя числами и колбеком
-let a = parseInt(prompt("Vvedite pervoe chislo:"));
-let b = prompt("Vvedite operaciju:");
-let c = parseInt(prompt("Vvedite vtoroe chislo:"));
-let d = prompt("Vvedite operaciju:");
-let i = parseInt(prompt("Vvedite tretje chislo:"));
-
-let l = alert(calculate1(a, b, c, d, i))
-
-function calculate1(a, b, c, d, i){
-    let result;
-    if (b == "+")
-    result = a + c;
-    if (b == "-")
-    result = a - c;
-    if (b == "*")
-    result = a * c;
-    if (b == "/")
-    result = a / c;
-    if (d == "+")
-        result = result + i;
-    if (d == "-")
-        result = result - i;
-    if (d == "*")
-        result = result * i;
-    if (d == "/")
-        result = result / i;
-    return result;
-}
-
+// let a = parseInt(prompt("Vvedite pervoe chislo:"));
+// let b = prompt("Vvedite operaciju:");
+// let c = parseInt(prompt("Vvedite vtoroe chislo:"));
+// let d = prompt("Vvedite operaciju:");
+// let i = parseInt(prompt("Vvedite tretje chislo:"));
+//
+// let l = alert(calculate1(a, b, c, d, i))
+//
+//  function calculate1(a, b, c, d, i){
+//     let result;
+//     switch (b) {
+//         case '+':
+//             result = a + c;
+//             break;
+//         case '-':
+//             result = a - c;
+//             break;
+//         case '*':
+//             result = a * c;
+//             break;
+//         case '/':
+//             if (b) {
+//                 result = a / c;
+//             } else {
+//                 result = 'бесконечность';
+//             }
+//             break;}
+//      switch (d) {
+//          case '+':
+//              result = result + i;
+//              break;
+//          case '-':
+//              result = result - i;
+//              break;
+//          case '*':
+//              result = result * i;
+//              break;
+//          case '/':
+//              if (b) {
+//                  result = result / i;
+//              } else {
+//                  result = 'бесконечность';
+//              }
+//              break;}
+//     return result;
+// }
 
 
