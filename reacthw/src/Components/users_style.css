@@ -1,0 +1,11 @@
+.even{
+background-color: aquamarine;
+width: 50%;
+    color: orangered;
+}
+
+.odd{
+    background-color: coral;
+    width: 60%;
+    color: white;
+}
