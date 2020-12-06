@@ -1,0 +1,16 @@
+h2 {
+    background-color: bisque;
+}
+
+p{
+    background-color: aliceblue;
+    font-size: 15px;
+}
+
+div{
+    border-bottom: 2px solid red;
+}
+
+h1{
+    background-color: aquamarine;
+}
