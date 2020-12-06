@@ -1,0 +1,14 @@
+h2 {
+    margin-bottom: 5px;
+background-color: white;
+}
+
+p {
+    margin-top: 0px;
+
+}
+
+div {
+    border-bottom: 1px solid orangered ;
+    background-color: lavender;
+}
