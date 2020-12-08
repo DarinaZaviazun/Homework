@@ -18,6 +18,11 @@ class UsersFromApi extends Component {
             .then(value => this.setState({selectedPost: value}))
     }
 
+    getRand() {
+
+        return Math.floor(Math.random() * 10);
+
+    }
 
     render() {
         let {user, selectedPost} = this.state;
@@ -25,7 +30,7 @@ class UsersFromApi extends Component {
         return (
             <div>
                 {
-                    selectedPost && <h1>Title: {selectedPost[0].title}</h1>
+                    selectedPost && <h1>Title: {selectedPost[this.getRand()].title}</h1>
                 }
                 {
                     user.map(user => <User user={user} key={user.id} selectPost={this.selectPost}/>)
