@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd84ac8c-a3f2-486d-81a9-4510f5102ef2" name="Default Changelist" comment="Pasha">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2020_11_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2020_11_05__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2020_11_09__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2020_11_09__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/all-comments/AllComments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-comments/AllComments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/all-posts/AllPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-posts/AllPosts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/all-users/AllUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-users/AllUsers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/comments/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comments/Comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commentsService/CommentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commentsService/CommentService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fullComment/FullComments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fullComment/FullComments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fullPost/FullPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fullPost/FullPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fullUser/FullUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fullUser/FullUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/posts/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/postServices/PostService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/postServices/PostService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userServices/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/userServices/UserService.js" afterDir="false" />
-    </list>
+    <list default="true" id="dd84ac8c-a3f2-486d-81a9-4510f5102ef2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,19 +66,6 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -123,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607685432135</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="react lesson5">
+      <created>1607699771471</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607699771471</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +146,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pasha" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pasha" />
+    <MESSAGE value="react lesson5" />
+    <option name="LAST_COMMIT_MESSAGE" value="react lesson5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
