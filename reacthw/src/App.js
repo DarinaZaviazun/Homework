@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import "./App.css"
 import {BrowserRouter as Router, Switch, Route, Link, withRouter} from 'react-router-dom';
+import AllUsers from "./components/all-users/AllUsers"
 
 class App extends Component {
     render() {
@@ -17,7 +18,7 @@ class App extends Component {
 
                     <Switch>
                         <Route path={"/users"}>
-                            <AllUser
+                            <AllUsers/>
                         </Route>
                     </Switch>
                 </div>
