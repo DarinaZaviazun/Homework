@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import UserService from "../../userServices/userService";
+import UserService from "../../userServices/UserService";
 import User from "../users/User";
 import './AllUsers.css'
 import {

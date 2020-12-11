@@ -6,9 +6,9 @@ import {
   Link,
   withRouter
 } from 'react-router-dom';
-import AllUsers from "./components2/all-users/AllUsers";
-import AllPosts from "./components2/all-posts/AllPosts";
-import AllComments from "./components/all-comments/AllComments";
+import AllUsers from "./components/all-users/AllUsers";
+import AllPosts from "./components/all-posts/AllPosts";
+//import AllComments from "./components/all-comments/AllComments";
 import './App.css'
 
 class App extends Component {
@@ -34,7 +34,7 @@ class App extends Component {
                   <AllPosts/>
                 </Route>
                 <Route path={'coments'}>
-                  <AllComments/>
+                  {/*<AllComments/>*/}
                 </Route>
               </Switch>
             </div>
