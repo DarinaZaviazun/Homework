@@ -4,7 +4,9 @@ import {BrowserRouter as Router, Switch, Route, Link, withRouter} from 'react-ro
 
 class App extends Component {
     render() {
+
         return (
+
             <Router>
             <div>
                 <div className={"header"}>
@@ -12,9 +14,10 @@ class App extends Component {
                     <Link id="user" to={"/users"}>User</Link>
                 </div>
                 <div className={'appRoute'}>
+
                     <Switch>
                         <Route path={"/users"}>
-                            <AllUsers/>
+                            <AllUser
                         </Route>
                     </Switch>
                 </div>
