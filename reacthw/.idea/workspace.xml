@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5396b6-6077-4f68-875e-7e73488abde6" name="Default Changelist" comment="react lesson1">
-      <change beforePath="$PROJECT_DIR$/../JS/additional after 14/forindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/../JS/additional after 14/forindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JS/lesson 7/lesson7.js" beforeDir="false" afterPath="$PROJECT_DIR$/../JS/lesson 7/lesson7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JS/lesson12/forindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/../JS/lesson12/forindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +81,7 @@
       <workItem from="1607176639846" duration="1453000" />
       <workItem from="1607178117076" duration="4159000" />
       <workItem from="1607248463207" duration="6962000" />
+      <workItem from="1607704344650" duration="486000" />
     </task>
     <task id="LOCAL-00001" summary="react master">
       <created>1607166276580</created>
@@ -113,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607248554637</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="react lesson1">
+      <created>1607704361741</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607704361741</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,9 +139,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="react master" />
     <MESSAGE value="lesson1 react" />
-    <MESSAGE value="react lesson1" />
     <MESSAGE value="react lesson2" />
-    <option name="LAST_COMMIT_MESSAGE" value="react lesson2" />
+    <MESSAGE value="react lesson1" />
+    <option name="LAST_COMMIT_MESSAGE" value="react lesson1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
