@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd84ac8c-a3f2-486d-81a9-4510f5102ef2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +79,7 @@
       <workItem from="1607682130109" duration="295000" />
       <workItem from="1607683457202" duration="4000" />
       <workItem from="1607683470119" duration="4146000" />
+      <workItem from="1607704947026" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="Pasha">
       <created>1607684536715</created>
