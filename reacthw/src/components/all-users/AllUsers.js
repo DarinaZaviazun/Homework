@@ -2,13 +2,7 @@ import React, {Component} from 'react';
 import UserService from "../../userServices/UserService";
 import User from "../users/User";
 import './AllUsers.css'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    withRouter
-} from 'react-router-dom';
+import {Switch, Route, withRouter} from 'react-router-dom';
 import FullUser from "../fullUser/FullUser";
 
 class AllUsers extends Component {
@@ -22,7 +16,7 @@ class AllUsers extends Component {
     render() {
         let {users} = this.state
         let {match:{url}} = this.props;
-        console.log(this.props)
+
         return (
             <div>
                 {
@@ -32,7 +26,7 @@ class AllUsers extends Component {
                     <Switch>
                         <Route path={`${url}/:id`} exact={true} render={(props) =>{
                             let {match: {params: {id}}} = props;
-                            {return <FullUser id={id}/>}}}/>
+                            return <FullUser id={id}  key={id}/>}}/>
                     </Switch>
                 </div>
             </div>

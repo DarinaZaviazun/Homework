@@ -1,18 +1,24 @@
 import React, {Component} from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    withRouter
-} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
+import CommentService from "../commentsService/CommentService"
 
 class FullComments extends Component {
+
+    state = {comment: null};
+    commentService = new CommentService();
+
+    async componentDidMount(){
+        let {id} = this.props;
+        const comment = await this.commentService.comment(id);
+        this.setState({comment})
+    }
+
     render() {
-        let {id} = this.props
+        const {comment} = this.state;
+
         return (
             <div>
-                here we have comment # {id}
+                {comment && <div>Comment #{comment.id} Title: {comment.name} From: {comment.email}</div>}
             </div>
         );
     }

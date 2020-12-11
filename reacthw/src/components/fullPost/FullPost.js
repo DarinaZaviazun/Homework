@@ -1,18 +1,24 @@
 import React, {Component} from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    withRouter
-} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
+import PostService from "../../postServices/PostService"
 
 class FullPost extends Component {
+
+    state = {post: null};
+    postService = new PostService();
+
+    async componentDidMount(){
+        let {id} = this.props;
+        const post = await this.postService.post(id);
+        this.setState({post});
+    }
+
     render() {
-        let {id} = this.props
+        const {post} = this.state;
+
         return (
             <div>
-                here we are post # {id}
+                {post && <div>#{post.id}  Title: {post.title} Body: {post.body}</div>}
             </div>
         );
     }

@@ -9,8 +9,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2020_11_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2020_11_05__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2020_11_09__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_12_2020_11_09__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/all-comments/AllComments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-comments/AllComments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/all-posts/AllPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-posts/AllPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/all-users/AllUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-users/AllUsers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/comments/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comments/Comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commentsService/CommentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commentsService/CommentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/fullComment/FullComments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fullComment/FullComments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/fullPost/FullPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fullPost/FullPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/fullUser/FullUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fullUser/FullUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/posts/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/postServices/PostService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/postServices/PostService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userServices/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/userServices/UserService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +59,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="master" />
+        <entry key="$PROJECT_DIR$/.." value="react_lesson4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -74,15 +85,13 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

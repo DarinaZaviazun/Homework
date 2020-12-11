@@ -1,16 +1,9 @@
 import React, {Component} from 'react';
 import FullPost from "../fullPost/FullPost";
 import PostService from "../../postServices/PostService";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    withRouter
-} from 'react-router-dom';
+import {Switch, Route, withRouter} from 'react-router-dom';
 import Post from "../posts/Post";
 import './allPosts.css'
-
 
 class AllPosts extends Component {
     postService = new PostService();
@@ -23,7 +16,7 @@ class AllPosts extends Component {
     render() {
         let {posts} = this.state;
         let {match:{url}} = this.props;
-        console.log(this.props)
+
         return (
             <div>
                 {
@@ -33,7 +26,7 @@ class AllPosts extends Component {
                     <Switch>
                         <Route path={`${url}/:id`} exact={true} render={(props) =>{
                             let {match: {params: {id}}} = props;
-                            {return <FullPost id={id}/>}}}/>
+                            return <FullPost id={id} key={id}/>}}/>
                     </Switch>
                 </div>
             </div>

@@ -6,4 +6,9 @@ export default class PostService{
             .then(value => value.json())
 
     }
+
+    async post(id) {
+        return await fetch(this.url + "/" + id)
+            .then(value => value.json())
+    }
 }

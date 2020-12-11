@@ -1,11 +1,5 @@
 import React, {Component} from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    withRouter
-} from 'react-router-dom';
+import {Route, Switch, withRouter} from 'react-router-dom';
 import FullComments from "../fullComment/FullComments";
 import CommentService from "../commentsService/CommentService";
 import Comment from "../comments/Comment";
@@ -22,8 +16,7 @@ class AllComments extends Component {
     render() {
         let {comments} = this.state;
         let {match:{url}} = this.props;
-        console.log(this.props)
-        console.log("tut")
+
         return (
             <div>
                 {
@@ -33,7 +26,7 @@ class AllComments extends Component {
                     <Switch>
                         <Route path={`${url}/:id`} exact={true} render={(props) =>{
                             let {match: {params: {id}}} = props;
-                            {return <FullComments id={id}/>}}}/>
+                            return <FullComments id={id} key={id}/>}}/>
                     </Switch>
                 </div>
             </div>
