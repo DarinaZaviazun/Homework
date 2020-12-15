@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import AllPeople from "./components/all-people/AllPeople";
+import "./App.css"
+import {
+BrowserRouter as Router,
+Switch,
+Route,
+Link,
+withRouter
+} from 'react-router-dom';
+import FullPerson from "./components/fullUser/Full-person";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+        <Router>
+        <div className="Back">
+            <div className="BlockForPeople">
+                <AllPeople/>
+            </div>
+
+                <Switch>
+                    <Route path={`/people/:id`} exact={true} render={(props) =>{
+                        let {match: {params: {id}}} = props;
+                        return <div className='BlockForPerson'><FullPerson id={id} key={id}/></div>
+                    }}/>
+                </Switch>
+
+        </div>
+        </Router>
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,16 @@
+.person {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    /*flex-grow: 1;*/
+}
+
+li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+}
+
+ul {
+    margin: 0px;
+}
