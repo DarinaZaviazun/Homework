@@ -32,7 +32,7 @@ class App extends Component {
                     }}/>
                     <Route path={`/person/:id/films`} exact={true} render={(props) => {
                         let {match: {params: {id}}} = props;
-                        return <div className='BlockForFilms'><Films id={id} key={id}/></div>
+                        return <div className='BlockForFilms'>Films with character # {id}<Films id={id} key={id}/></div>
                     }}/>
                 </Switch>
 

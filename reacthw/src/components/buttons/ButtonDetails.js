@@ -14,6 +14,7 @@ class ButtonDetails extends Component {
         let {item} = this.props
 
         return (
+
             <li>
                 {
                     <Link className={'details'} to={`/people/${item.id}`}>Details</Link>
