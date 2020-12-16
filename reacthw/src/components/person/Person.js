@@ -17,7 +17,12 @@ class Person extends Component {
 
         return (
             <div className={"person"}>
-                {item.name} <ul><ButtonDetails item={item}/> <ButtonFilms/> <ButtonDelete/></ul>
+                {item.id} - {item.name}
+                <ul>
+                    <ButtonDetails item={item}/>
+                    <ButtonFilms item={item}/>
+                    <ButtonDelete/>
+                </ul>
             </div>
         );
     }

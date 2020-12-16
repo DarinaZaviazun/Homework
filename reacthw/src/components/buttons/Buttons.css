@@ -2,10 +2,8 @@
     background-color: darkslateblue;
     height: 25px;
     border-radius: 5px;
-    width: 70px;
     text-decoration: none;
     margin: 5px;
-    border: 0px;
     color: white;
 }
 
@@ -14,10 +12,8 @@
     background-color: darkgreen;
     height: 25px;
     border-radius: 5px;
-    width: 100px;
     text-decoration: none;
     margin: 5px;
-    border: 0px;
     color: white;
 }
 
@@ -25,9 +21,16 @@
     background-color: orangered;
     height: 25px;
     border-radius: 5px;
-    width: 70px;
     text-decoration: none;
     margin: 5px;
-    border: 0px;
+    color: white;
+}
+
+.homeworld {
+    background-color: darkseagreen;
+    height: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
     color: white;
 }

@@ -9,10 +9,11 @@ withRouter
 
 class ButtonFilms extends Component {
     render() {
+        let {item} = this.props
         return (
             <li>
                 {
-                    //<Link className={'films'}>Films</Link>
+                    <Link className={'films'} to={`/person/${item.id}/films`}>Show Films</Link>
                 }
             </li>
         );

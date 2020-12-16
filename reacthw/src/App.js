@@ -9,6 +9,8 @@ Link,
 withRouter
 } from 'react-router-dom';
 import FullPerson from "./components/fullUser/Full-person";
+import Planet from "./components/planets/Planet";
+import Films from "./components/Films/Films";
 
 class App extends Component {
   render() {
@@ -23,6 +25,14 @@ class App extends Component {
                     <Route path={`/people/:id`} exact={true} render={(props) =>{
                         let {match: {params: {id}}} = props;
                         return <div className='BlockForPerson'><FullPerson id={id} key={id}/></div>
+                    }}/>
+                    <Route path={`/planets/:id`} exact={true} render={(props) => {
+                        let {match: {params: {id}}} = props;
+                        return <div className='BlockForPlanet'><Planet id={id} key={id}/></div>
+                    }}/>
+                    <Route path={`/person/:id/films`} exact={true} render={(props) => {
+                        let {match: {params: {id}}} = props;
+                        return <div className='BlockForFilms'><Films id={id} key={id}/></div>
                     }}/>
                 </Switch>
 

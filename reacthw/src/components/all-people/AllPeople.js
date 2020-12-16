@@ -14,7 +14,7 @@ class AllPeople extends Component {
 
     peopleFromApi = new PeopleFromAPI()
     state = {people: []};
-    mass;
+
     async componentDidMount() {
         let people = await this.peopleFromApi.peoples();
         people.map((value, index) => value.id = index+1)
