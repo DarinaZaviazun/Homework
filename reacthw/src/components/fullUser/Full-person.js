@@ -3,6 +3,14 @@ import PeopleFromAPI from "../../services/PeopleFromAPI";
 import ButtonFilms from "../buttons/ButtonFilms";
 import ButtonHomeWorld from "../buttons/ButtonHomeWorld";
 import "./detailed.css"
+import {
+BrowserRouter as Router,
+Switch,
+Route,
+Link,
+withRouter
+} from 'react-router-dom';
+import Planet from "../planets/Planet";
 
 class FullPerson extends Component {
 
@@ -17,10 +25,12 @@ class FullPerson extends Component {
 
     render() {
         const {person} = this.state
+
         return (
 
             <div>
-                {person && <div className={'detailed'}>
+                {person &&
+                <div className={'detailed'}>
                     Name: {person.name} <br/>
                     Height: {person.height} <br/>
                     Mass : {person.mass} <br/>
@@ -32,6 +42,9 @@ class FullPerson extends Component {
                     Homeworld: <ButtonHomeWorld home={person.homeworld}/> <br/>
                 </div>}
             </div>
+
+
+
         );
     }
 }

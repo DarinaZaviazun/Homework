@@ -14,3 +14,14 @@ li {
 ul {
     margin: 0px;
 }
+
+.delete {
+    background-color: orangered;
+    height: 31px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+    border: none;
+}

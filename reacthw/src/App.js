@@ -16,26 +16,42 @@ class App extends Component {
   render() {
     return (
         <Router>
-        <div className="Back">
-            <div className="BlockForPeople">
-                <AllPeople/>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link  className={'navigation'} to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link  className={'navigation'} to="/people">People</Link>
+                        </li>
+
+                    </ul>
+                </nav>
             </div>
 
+        <div className="Back">
                 <Switch>
+                    <Route path={`/people`} exact={true} render={(props) =>{
+                        let {match: {params: {id}}} = props;
+                        return <div className='BlockForPeople'><AllPeople key={id}/></div>
+                    }}/>
+
                     <Route path={`/people/:id`} exact={true} render={(props) =>{
                         let {match: {params: {id}}} = props;
                         return <div className='BlockForPerson'><FullPerson id={id} key={id}/></div>
                     }}/>
-                    <Route path={`/planets/:id`} exact={true} render={(props) => {
-                        let {match: {params: {id}}} = props;
-                        return <div className='BlockForPlanet'><Planet id={id} key={id}/></div>
-                    }}/>
+
                     <Route path={`/person/:id/films`} exact={true} render={(props) => {
                         let {match: {params: {id}}} = props;
                         return <div className='BlockForFilms'>Films with character # {id}<Films id={id} key={id}/></div>
                     }}/>
-                </Switch>
 
+                    <Route path={`/planets/:id`} exact={true} render={(props) => {
+                        let {match: {params: {id}}} = props;
+                        return <div className='BlockForPlanet'><Planet id={id} key={id}/></div>
+                    }}/>
+                </Switch>
         </div>
         </Router>
     );

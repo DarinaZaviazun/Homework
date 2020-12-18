@@ -20,6 +20,7 @@ class ButtonDetails extends Component {
                     <Link className={'details'} to={`/people/${item.id}`}>Details</Link>
                 }
             </li>
+
         );
     }
 }

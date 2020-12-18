@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import ButtonDetails from "../buttons/ButtonDetails";
 import "./Person.css"
 import ButtonFilms from "../buttons/ButtonFilms";
-import ButtonDelete from "../buttons/ButtonDelete";
 import {
 BrowserRouter as Router,
 Switch,
@@ -12,8 +11,10 @@ withRouter
 } from 'react-router-dom';
 
 class Person extends Component {
+
+
     render() {
-        let {item} = this.props;
+        let {item, onDeletePerson} = this.props;
 
         return (
             <div className={"person"}>
@@ -21,7 +22,7 @@ class Person extends Component {
                 <ul>
                     <ButtonDetails item={item}/>
                     <ButtonFilms item={item}/>
-                    <ButtonDelete/>
+                    <button className={'delete'} onClick={() => onDeletePerson(item.id)}>Delete</button>
                 </ul>
             </div>
         );
