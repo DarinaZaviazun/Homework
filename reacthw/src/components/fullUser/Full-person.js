@@ -27,7 +27,6 @@ class FullPerson extends Component {
         const {person} = this.state
 
         return (
-
             <div>
                 {person &&
                 <div className={'detailed'}>
@@ -42,9 +41,6 @@ class FullPerson extends Component {
                     Homeworld: <ButtonHomeWorld home={person.homeworld}/> <br/>
                 </div>}
             </div>
-
-
-
         );
     }
 }

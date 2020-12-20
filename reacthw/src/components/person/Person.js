@@ -12,7 +12,6 @@ withRouter
 
 class Person extends Component {
 
-
     render() {
         let {item, onDeletePerson} = this.props;
 

@@ -23,21 +23,18 @@ class AllPeople extends Component {
 
     onDeletePerson = (id) => {
         let {people} = this.state;
-        let splice = people.splice(id - 1, 1);
-        this.setState({users: splice})
+        let pers = people.filter(value => value.id !== id)
+        this.setState({people: pers})
     }
 
     render() {
         let {people} = this.state;
-
 
         return (
             <div>
                 {
                     people.map(value => <Person item={value} key={value.id} onDeletePerson={this.onDeletePerson}/>)
                 }
-
-
             </div>
         );
     }
