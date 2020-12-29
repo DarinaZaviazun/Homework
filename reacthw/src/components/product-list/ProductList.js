@@ -1,13 +1,14 @@
 import ProductService from "../../services/ProductService";
 import {useCallback, useEffect} from "react"
 import {useDispatch, useSelector} from "react-redux";
-import {setProducts} from "../../redux";
+import {setProducts, setWishList} from "../../redux";
 import {Product} from "../product-item";
+
 
 
 export function  ProductList () {
 
-    const {products: {products}} = useSelector(state => state);
+    const {products: {products}, wishlist: {wishlist}} = useSelector(state => state);
 
     const dispatch = useDispatch();
 
@@ -22,20 +23,24 @@ export function  ProductList () {
     }, [])
 
     const toWishList = (product) => {
-        let aa = products.filter(product => product.id === product.id)
-        console.log(aa)
+        dispatch(setWishList(product))
     }
 
     const toCart = (product) => {
-        let aa = products.filter(product => product.id === id)
-        console.log(aa)
+
     }
 
     return(
         <div>
-            {!!products &&
+            {
                 products.map(product => {
-                        return <Product product={product} toWishList={toWishList} toCart={toCart} key={product.id}/>
+                        return <Product
+                            product={product}
+                            toWishList={toWishList}
+                            toCart={toCart}
+                            key={product.id}
+                            isAddedToWishList={!!wishlist.find(({id}) => id === product.id)}
+                        />
                     }
                 )
             }

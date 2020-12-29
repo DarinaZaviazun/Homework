@@ -1,1 +1,3 @@
 export const SET_PRODUCTS = "SET_PRODUCTS"
+export const SET_WISHLIST = "SET_WISHLIST"
+export const UNSET_WISHLIST = "UNSET_WISHLIST"
