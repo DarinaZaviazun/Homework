@@ -4,6 +4,7 @@ export const Product = ({
                             toCart,
                             toWishList,
                             isAddedToWishList,
+                            isAddedToCart,
                             product,
                             product: {id, title, price}
     }) => {
@@ -16,7 +17,7 @@ export const Product = ({
             Name: {title}<br/>
             Price: {price} <br/>
             <button onClick={() => toWishList(product)}>{isAddedToWishList? "remove from wishlist" : "add to wishlist"}</button>
-            <button onClick={() => toCart(product)}>add to cart</button>
+            <button onClick={() => toCart(product)}>{isAddedToCart? "remove from cart" : "add to cart"}</button>
             <hr/>
         </div>
     )

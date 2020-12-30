@@ -1,5 +1,5 @@
 import {SET_WISHLIST} from "../action-types";
-import {UNSET_WISHLIST} from "../action-types";
+
 
 const initialState = {
     wishlist: []
@@ -16,9 +16,7 @@ export default (state = initialState, action) => {
             }
             return {...state, wishlist: updatedWishList};
         }
-        case UNSET_WISHLIST: {
-            return null;
-        }
+
         default: {
             return state;
         }
