@@ -1,0 +1,109 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+img{
+    cursor: pointer;
+}
+
+.catalog {
+    font-size: 12pt;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 180px;
+    height: 30px;
+}
+
+.catalog:hover{
+    background-color: #4E5C6A;
+    transition: 0.6s;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+span {
+    padding-top: 7px;
+    padding-right: 5px;
+}
+
+.left-icons {
+    height: 40px;
+    padding-right: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.premium {
+    border-radius: 5px;
+}
+
+.search {
+    width: 600px;
+    margin-right: 10px;
+}
+
+.form-poisk {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+input {
+    width: 90%;
+    height: 40px;
+    border: none;
+    padding: 0 40px;
+    margin-left: 10px;
+    border-radius: 3px 0 0 3px;
+    background-image: url("https://cdn0.iconfinder.com/data/icons/30-hardware-line-icons/64/Search-128.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.finder {
+    padding: 0;
+    height: 40px;
+    background-color: #00A046;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    font-size: 15pt;
+    color: white;
+    width: 80px;
+    box-sizing: border-box;
+}
+
+.finder:hover{
+    background-color: #00bc52;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.try {
+    font-size: 8pt;
+    color: #C7C8C9;
+    padding: 2px;
+}
+
+.try div{
+    padding-bottom: 5px;
+}
+
+.try:hover{
+    text-decoration: underline red;
+    background-color: #4E5C6A;
+    transition: 0.6s;
+    border-radius: 2px;
+    cursor: pointer;
+}

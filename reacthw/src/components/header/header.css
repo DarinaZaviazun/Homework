@@ -1,0 +1,18 @@
+header {
+    background-color: #122538;
+    color: white;
+    margin: 0px;
+    font-family: BlinkMacSystemFont, -apple-system, Arial, "Segoe UI", Roboto, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+.top-banner {
+    margin: 0px;
+    background-color: #FFFEC6;
+    display: flex;
+    justify-content: center;
+}
+
+.header-main {
+    height: 100px;
+}
