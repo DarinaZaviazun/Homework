@@ -1,20 +1,40 @@
 .main-content {
     width: calc(100% - 620px);
-    height: 1000px;
+    height: max-content;
     background-color: white;
-    padding-left: 35px;
     border-left: 1px solid #E9E9E9;
+    padding-left: 20px;
 }
 
-.tolko {
+.content {
     font-size: 20px;
-    width: 200px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.tolko img {
-    height: 27px;
-    width: auto;
+.content img {
+    max-height: 25px;
+    max-width: 25px;
+    margin-right: 15px;
+}
+
+#eye {
+    max-height: 20px;
+}
+
+.tovary {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+}
+
+.div-img {
+    display: flex;
+    align-items: center;
 }

@@ -2,7 +2,7 @@ const initialState = {
     cart: []
 }
 
-export const cart = (state, action) => {
+export const cart = (state=initialState, action) => {
 
     switch (action.type) {
 

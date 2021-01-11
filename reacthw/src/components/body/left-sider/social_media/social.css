@@ -1,0 +1,17 @@
+#div7 {
+    border-bottom: 1px solid #E9E9E9;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#div7 img {
+    max-width: 200px;
+}
+
+#div7 div {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #7C7C7C;
+}

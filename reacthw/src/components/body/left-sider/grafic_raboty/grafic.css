@@ -1,0 +1,23 @@
+table tr td {
+    width: 150px;
+    font-size: 13px;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+#div5 {
+    color: #7C7C7C;
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#div6 {
+    padding-bottom: 8px;
+}
+
+#div8 {
+    border-bottom: 1px solid #E9E9E9;
+}

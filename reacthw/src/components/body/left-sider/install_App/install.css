@@ -1,0 +1,22 @@
+#div4 {
+    border-bottom: 1px solid #E9E9E9;
+    height: 90px;
+    padding: 12px 20px 12px 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: grey;
+
+}
+
+#div4 div {
+    margin-bottom: 10px;
+}
+
+#div4 img {
+    max-width: 120px;
+    height: auto;
+    padding-right: 20px;
+}

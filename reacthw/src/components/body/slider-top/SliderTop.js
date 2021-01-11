@@ -25,31 +25,31 @@ export const SliderTop = () => {
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src={Third}
-                             alt="Second slide"/>
+                             alt="Third slide"/>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src={Fourth}
-                             alt="Second slide"/>
+                             alt="Fourth slide"/>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src={Fifth}
-                             alt="Second slide"/>
+                             alt="Fifth slide"/>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src={Sixth}
-                             alt="Second slide"/>
+                             alt="Sixth slide"/>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src={Seventh}
-                             alt="Second slide"/>
+                             alt="Seventh slide"/>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src={Eighth}
-                             alt="Second slide"/>
+                             alt="Eighth slide"/>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src={Nineth}
-                             alt="Second slide"/>
+                             alt="Nineth slide"/>
                     </div>
 
                 </div>
@@ -62,7 +62,7 @@ export const SliderTop = () => {
                 {/*    <span className="sr-only">Next</span>*/}
                 {/*</a>*/}
             </div>
-            <div className="calc-akcii">Все акции "count-akcij"</div>
+            <div className="calc-akcii">Все акции <span>9</span></div>
         </div>
     )
 }

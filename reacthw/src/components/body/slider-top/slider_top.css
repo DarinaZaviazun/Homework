@@ -7,10 +7,14 @@
 }
 
 .calc-akcii {
-    border: 1px solid #E9E9E9;
+    border: 1px solid #A9A9A8;
     color: #6B96BE;
     width: 200px;
     height: 35px;
     padding-top: 3px;
     text-align: center;
+}
+
+.calc-akcii span {
+    color: lightgrey;
 }

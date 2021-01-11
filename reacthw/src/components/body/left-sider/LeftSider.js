@@ -18,6 +18,10 @@ import Sixteen from "../../../images/icons-left-menu/16.png"
 import Seventeen from "../../../images/icons-left-menu/17.png"
 import RightArrow from "../../../images/rightArrow.png"
 import Tree from "../../../images/christmas-tree.png"
+import {Autorization} from "./autorization";
+import {InstallApp} from "./install_App";
+import {Grafic} from "./grafic_raboty";
+import {SocialMedia} from "./social_media";
 
 
 export const LeftSider = () => {
@@ -143,9 +147,12 @@ export const LeftSider = () => {
                         Все для уютных праздников
                         <img src={Tree} alt={"tree"} className={"icon-tree"}/>
                     </div>
-                    <img src={RightArrow} alt={"rightarrow"}  className={"arrow"}/>
                 </div>
             </div>
+            <Autorization />
+            <InstallApp />
+            <Grafic />
+            <SocialMedia />
         </div>
     )
 }
