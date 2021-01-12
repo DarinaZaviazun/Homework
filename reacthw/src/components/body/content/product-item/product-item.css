@@ -2,7 +2,8 @@
     border-right: 1px solid #E9E9E9;
     border-bottom: 1px solid #E9E9E9;
     height: 300px;
-    width: 200px;
+    width: 16.6%;
+    min-width: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,16 +36,26 @@
     margin-left: 5px;
 }
 
-.item-icon {
-    height: 25px;
-}
-
 #title {
     height: 40px;
+    margin-bottom: 8px;
 }
 
 div .item-icon{
+    height: 20px;
     position: relative;
-    left: 70px;
-    bottom: 240px;
+    left: 80px;
+    bottom: 245px;
+}
+
+div .item-icon2{
+    height: 20px;
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+}
+
+.item-icons-footer {
+    display: flex;
+    flex-direction: row;
 }

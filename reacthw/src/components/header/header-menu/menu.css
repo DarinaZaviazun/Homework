@@ -86,7 +86,7 @@ input:focus {
 }
 
 .finder {
-    padding: 0;
+    padding-bottom: 5px;
     height: 40px;
     background-color: #00A046;
     border: none;
@@ -95,6 +95,7 @@ input:focus {
     color: white;
     width: 80px;
     box-sizing: border-box;
+
 }
 
 .finder:hover{
@@ -140,19 +141,45 @@ input:focus {
     background-color: white;
     border: none;
     border-radius: 7px;
-    height: 100px;
-    width: 300px;
+    height: 150px;
+    width: 530px;
     position: fixed;
+    top: 90px;
     box-shadow: 0.4em 0.4em 0.4em 5px rgba(122,122,122,0.5);
     color: #122538;
     opacity: 0;
     z-index: 99;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 30px 30px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.popup #div-one{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-right: 15px;
+}
+
+
+.popup #div-two{
+    font-weight: 400;
+    font-size: 18pt;
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+.popup #div-three{
+    width: 400px;
 }
 
 .icon-pop:hover .popup {
     visibility: visible;
     top: 117px;
-    right: 190px;
+    right: 150px;
     transition: 0.5s;
     opacity: 1;
 }
@@ -163,6 +190,7 @@ input:focus {
     background-color: white;
     border: none;
     border-radius: 7px;
+    top: 90px;
     height: 180px;
     width: 320px;
     position: fixed;
@@ -185,7 +213,7 @@ input:focus {
     padding: 0;
     height: 40px;
     border: none;
-    border-radius: 0 3px 3px 0;
+    border-radius: 5px;
     font-size: 13pt;
     color: white;
     width: 140px;
@@ -208,5 +236,90 @@ input:focus {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
 
+#div20 {
+    background-color: red;
+    position: relative;
+    bottom: 60px;
+    left: 30px;
+    width: 17px;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+#div21 {
+    background-color: red;
+    position: relative;
+    bottom: 60px;
+    left: 30px;
+    width: 17px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.oformi {
+    background-color: #00A046;
+    padding: 0;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13pt;
+    color: white;
+    width: 250px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.oformi:hover{
+    background-color: #00bc52;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.popup3 {
+    visibility: hidden;
+    margin-top: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    height: max-content;
+    width: 300px;
+    position: fixed;
+    top: 90px;
+    box-shadow: 0.4em 0.4em 0.4em 5px rgba(122,122,122,0.5);
+    color: #122538;
+    opacity: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 15px 22px 15px;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 16px;
+}
+
+.icon-pop:hover .popup3 {
+    visibility: visible;
+    top: 117px;
+    right: 150px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#div-four {
+    color: #3e77aa;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+#div-four:hover {
+    cursor: pointer;
+    text-decoration: underline red;
+    transition: 0.5s;
+    color: red;
 }

@@ -5,7 +5,7 @@ import ProductService from "../../../services/ProductService";
 import {useDispatch, useSelector} from "react-redux";
 import {ProductItem} from "./product-item";
 import {useEffect} from "react";
-import {setProducts} from "../../../redux";
+import {setCart, setProducts, setWishlist} from "../../../redux";
 import {useCallback} from "react";
 import Chat from "../../../images/chat.png"
 import Viewed from "../../../images/viewed.png"
@@ -14,7 +14,7 @@ import Newicon from "../../../images/new-icon.png"
 
 export const Content = () => {
 
-    const {product: {product}} = useSelector(state => state);
+    const {product: {product}, wishlist:{wishlist}, cart:{cart}} = useSelector(state => state);
     const dispatch = useDispatch();
     let productService = new ProductService();
 
@@ -27,12 +27,19 @@ export const Content = () => {
         fetchData();
     }, [])
 
-    console.log(product);
+
     let jewerly = product.filter(el => el.category === "jewelery");
     let womenclothing = product.filter(el => el.category === "women clothing");
     let menclothing = product.filter(el => el.category === "men clothing");
     let electronics = product.filter(el => el.category === "electronics");
 
+    function toWishlist (product) {
+        dispatch(setWishlist(product))
+    }
+
+    function toCart (product) {
+        dispatch(setCart(product))
+    }
 
     return(
         <div className="main-content">
@@ -47,6 +54,10 @@ export const Content = () => {
                     return <ProductItem
                         key={element.id}
                         product={element}
+                        toWishlist={toWishlist}
+                        toCart={toCart}
+                        isToggledToWishlist = {!!wishlist.find(el => el.id === element.id)}
+                        isToggledToCart = {!!cart.find(el => el.id === element.id)}
                     />})}
             </div>
             <div className={"tovary"}>
@@ -58,6 +69,10 @@ export const Content = () => {
                     return <ProductItem
                         key={element.id}
                         product={element}
+                        toWishlist={toWishlist}
+                        toCart={toCart}
+                        isToggledToWishlist = {!!wishlist.find(el => el.id === element.id)}
+                        isToggledToCart = {!!cart.find(el => el.id === element.id)}
                     />})}
             </div>
 
@@ -70,6 +85,10 @@ export const Content = () => {
                     return <ProductItem
                         key={element.id}
                         product={element}
+                        toWishlist={toWishlist}
+                        toCart={toCart}
+                        isToggledToWishlist = {!!wishlist.find(el => el.id === element.id)}
+                        isToggledToCart = {!!cart.find(el => el.id === element.id)}
                     />})}
             </div>
 
@@ -82,6 +101,10 @@ export const Content = () => {
                     return <ProductItem
                         key={element.id}
                         product={element}
+                        toWishlist={toWishlist}
+                        toCart={toCart}
+                        isToggledToWishlist = {!!wishlist.find(el => el.id === element.id)}
+                        isToggledToCart = {!!cart.find(el => el.id === element.id)}
                     />})}
             </div>
 
