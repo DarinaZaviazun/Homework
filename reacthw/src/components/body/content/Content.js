@@ -60,6 +60,7 @@ export const Content = () => {
                         isToggledToCart = {!!cart.find(el => el.id === element.id)}
                     />})}
             </div>
+
             <div className={"tovary"}>
                 <div className="content">
                     <div className={"div-img"}><img src={Chat} alt="chat" /></div>

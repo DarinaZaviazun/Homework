@@ -11,6 +11,7 @@ import {PremiumPop} from "./Premium-pop";
 import {useSelector} from "react-redux";
 import Heart_yellow from "../../../images/item_wishlist_icon.png"
 import Cart_green from "../../../images/item_cart_icon.png"
+import {WholeMenu} from "../../whole-menu/Whole-menu";
 
 export const HeaderMenu = () => {
 
@@ -38,6 +39,7 @@ export const HeaderMenu = () => {
             <div className="catalog">
                 <img src={Icon} alt="icon"/>
                 <span>Каталог товаров</span>
+                <div className="popup6"><WholeMenu/></div>
             </div>
             <div className="search">
                 <form className="form-poisk">
