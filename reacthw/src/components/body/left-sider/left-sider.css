@@ -8,11 +8,11 @@
     width: 300px;
     background-color: white;
     height: max-content;
-    border-bottom: 1px solid #E9E9E9;
-    color: #6B96BE;
-    font-size: 14px;
+    color: #3e77aa;
+    font-size: 15px;
     padding-top: 27px;
     padding-bottom: 20px;
+    font-weight: 400;
 }
 
 .main-div div{
@@ -48,4 +48,13 @@
 
 .arrow {
     max-height: 10px;
+}
+
+.main-div100:hover .popup6 {
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
+    left: 130px;
+    top: 102px;
 }

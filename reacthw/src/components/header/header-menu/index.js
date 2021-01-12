@@ -1,7 +1,6 @@
 import "./menu.css"
 import Icon from "../../../images/icon_catalog.png"
 import Compare from "../../../images/libra_icon.png"
-import Compare_full from "../../../images/libra_icon_chosen.png"
 import Wishlist from "../../../images/wishlist_icon.png"
 import Wishlist_full from "../../../images/wishlist_icon_chosen.png"
 import Cart from "../../../images/cart_icon.png"
@@ -12,6 +11,7 @@ import {useSelector} from "react-redux";
 import Heart_yellow from "../../../images/item_wishlist_icon.png"
 import Cart_green from "../../../images/item_cart_icon.png"
 import {WholeMenu} from "../../whole-menu/Whole-menu";
+import {MenuBase} from "../../body/left-sider/menu/MenuBase";
 
 export const HeaderMenu = () => {
 
@@ -36,7 +36,7 @@ export const HeaderMenu = () => {
                 <img src="https://xl-static.rozetka.com.ua/assets/img/design/logo_n.svg" alt="smile" />
                 </a>
             </div>
-            <div className="catalog">
+            <div className="catalog" >
                 <img src={Icon} alt="icon"/>
                 <span>Каталог товаров</span>
                 <div className="popup6"><WholeMenu/></div>

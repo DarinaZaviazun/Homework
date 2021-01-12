@@ -1,7 +1,0 @@
-.main-div100:hover .popup6 {
-    visibility: visible;
-    transition: 0.5s;
-    opacity: 1;
-    top: 100px;
-    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
-}

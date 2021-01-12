@@ -326,13 +326,13 @@ input:focus {
 
 .popup6 {
     visibility: hidden;
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: white;
     border: none;
     border-radius: 7px;
     height: max-content;
     width: 1000px;
-    position: fixed;
+    position: absolute;
     top: 90px;
     box-shadow: 0.4em 0.4em 0.4em 5px rgba(122,122,122,0.5);
     color: #122538;
@@ -342,16 +342,17 @@ input:focus {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 20px 30px 30px;
+    padding: 10px 30px 30px;
     box-sizing: border-box;
     align-items: center;
+
 }
 
 .catalog:hover .popup6 {
     visibility: visible;
     transition: 0.5s;
-    left: 160px;
-    top: 100px;
+    left: 130px;
+    top: 102px;
     opacity: 1;
     font-weight: 400;
     box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);

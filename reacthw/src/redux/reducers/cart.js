@@ -1,5 +1,4 @@
 import {SET_CART} from "../action_types";
-import {act} from "@testing-library/react";
 
 const initialState = {
     cart: []
