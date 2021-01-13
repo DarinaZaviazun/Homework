@@ -5,8 +5,8 @@ export const Grafic = () => {
     return(
         <div id={"div8"}>
             <div id={"div5"}>График работы Call-центра</div>
-            <div id={"div6"}>+38 044 537-02-22</div>
-            <div id={"div6"}>+38 044 503-80-80</div>
+            <div id={"div6"}><span>+38 044 537-02-22</span></div>
+            <div id={"div6"}><span>+38 044 503-80-80</span></div>
             <table>
                 <tbody>
                     <tr>

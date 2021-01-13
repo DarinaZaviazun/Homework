@@ -94,5 +94,15 @@ a:hover {
 
 .modal-body table tr td{
     font-size: 15px;
+    width: 220px;
+}
 
+.modal-body .number {
+    color: #3e77aa;
+}
+
+.modal-body .number span:hover {
+    color: red;
+    text-decoration: underline red;
+    cursor: pointer;
 }
