@@ -7,15 +7,15 @@ import Cart from "../../../images/cart_icon.png"
 import Cart_full from "../../../images/cart_icon_chosen.png"
 import Premium from "../../../images/premium.png"
 import {PremiumPop} from "./Premium-pop";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import Heart_yellow from "../../../images/item_wishlist_icon.png"
 import Cart_green from "../../../images/item_cart_icon.png"
-import {WholeMenu} from "../../whole-menu/Whole-menu";
-import {MenuBase} from "../../body/left-sider/menu/MenuBase";
+import {setFlagForMenu} from "../../../redux";
 
 export const HeaderMenu = () => {
 
-    const {wishlist:{wishlist}, cart:{cart}} = useSelector(value => value)
+    const {wishlist:{wishlist}, cart:{cart}, flagForMenu:{flagForMenu}} = useSelector(value => value)
+    const dispatch = useDispatch();
 
     let konec = "";
     if (cart.length === 1)
@@ -36,11 +36,14 @@ export const HeaderMenu = () => {
                 <img src="https://xl-static.rozetka.com.ua/assets/img/design/logo_n.svg" alt="smile" />
                 </a>
             </div>
-            <div className="catalog" >
-                <img src={Icon} alt="icon"/>
-                <span>Каталог товаров</span>
-                <div className="popup6"><WholeMenu/></div>
+            <div className="catalog" onClick={() => {
+                dispatch(setFlagForMenu(!flagForMenu))
+            }}>
+                <img src={Icon} alt="icon" id={"catalog-icon"}/>
+                <span id={"catalog-span"}>Каталог товаров</span>
+                {/*<div className="popup6"><WholeMenu/></div>*/}
             </div>
+
             <div className="search">
                 <form className="form-poisk">
                     <input type="text" placeholder="Я ищу..." />

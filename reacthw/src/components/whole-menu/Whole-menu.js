@@ -4,6 +4,6 @@ import "./wholemenu.css"
 export const WholeMenu = () => {
 
     return (
-            <MenuBase />
+                <MenuBase />
     )
 }
