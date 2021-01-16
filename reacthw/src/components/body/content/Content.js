@@ -108,8 +108,6 @@ export const Content = () => {
                         isToggledToCart = {!!cart.find(el => el.id === element.id)}
                     />})}
             </div>
-
-
         </div>
     )
 }

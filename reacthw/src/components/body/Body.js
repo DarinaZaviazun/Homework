@@ -12,9 +12,15 @@ export const Body = () => {
     let menu = document.getElementsByClassName('popup7');
 
     html.addEventListener('click', function(e) {
-        if(e.target.className !== 'popup7' && e.target.id !== "catalog-span" && e.target.className !== 'catalog' && e.target.id !== "catalog-icon"){
-            menu[0].classList.add("hide");
-            setTimeout(() => {dispatch(setFlagForMenu(!flagForMenu))}, 5)
+        if(flagForMenu === true && menu.length > 0 && e.target.className !== 'popup7' && e.target.id !== "catalog-span" && e.target.className !== 'catalog' && e.target.id !== "catalog-icon"){
+
+            try{
+                menu[0].classList.add("hide");
+                setTimeout(() => {dispatch(setFlagForMenu(!flagForMenu))}, 5)
+            }
+            catch(e){
+                console.log(e)
+            }
         }
     });
 
@@ -23,11 +29,9 @@ export const Body = () => {
         <div className="body-main">
             <div>
                 {flagForMenu === true && <div className={"popup7"}><WholeMenu /></div>}
-
             </div>
             <LeftSider />
             <Content />
         </div>
-
     )
 }
