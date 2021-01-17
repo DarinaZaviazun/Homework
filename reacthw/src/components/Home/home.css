@@ -41,3 +41,17 @@
 .div-home-movie h4{
     text-align: center;
 }
+
+#Loading {
+    text-align: center;
+    align-self: center;
+    font-size: 30px;
+}
+
+.div-genres {
+    font-size: 10px;
+}
+
+.div-year {
+    font-size: 14px;
+}
