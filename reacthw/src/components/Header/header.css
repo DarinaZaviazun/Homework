@@ -1,4 +1,37 @@
 .div-header {
-    background-color: lightgrey;
-    height: 10vh;
+    background-color: #032541;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+}
+
+.div-header a img{
+    cursor: pointer;
+    max-height: 35px;
+}
+
+.div-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-search input {
+    height: 20px;
+    width: 200px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-right: 7px;
+}
+
+.div-search button {
+    height: 22px;
+}
+
+.div-search button a {
+    text-decoration: none;
+    color: #032541;
 }

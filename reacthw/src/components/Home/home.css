@@ -8,9 +8,11 @@
     justify-content: center;
     flex-wrap: wrap;
     overflow-y: auto;
-    height: 94vh;
+    height: 88vh;
     padding-bottom: 10px;
+
 }
+
 
 .div-home {
     display: flex;
@@ -31,6 +33,13 @@
     border-radius: 10px;
     align-items: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.div-home-movie #id1{
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
