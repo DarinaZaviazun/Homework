@@ -1,0 +1,41 @@
+.sortirovka {
+    height: 500px;
+    width: 350px;
+    background-color: #dffff8;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+#div-genres-sort {
+    font-size: 18px;
+    font-weight: 500;
+    color: #00274f;
+}
+
+.genres-names {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+
+.genre-one{
+    background-color: #daf9f2;
+    margin: 0 10px 5px 0;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    width: fit-content;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.genre-one:hover {
+    background-color: #d1f0e9;
+}
+
+.choosen {
+    background-color: #bcdcd5;
+}
+

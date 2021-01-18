@@ -1,5 +1,4 @@
 import {moviesService} from "../services/MovieService";
-import {setLoaded, setPagination} from "../../redux/action-creator";
 import {useEffect} from "react";
 import {useState} from "react";
 import "./filmpage.css"
@@ -18,7 +17,6 @@ export const FilmPage = () => {
 
     const fetchMovie = async (filmid) => {
          data = await moviesService.getMovieByID(filmid);
-        console.log(data);
         setMovie(data);
     }
 

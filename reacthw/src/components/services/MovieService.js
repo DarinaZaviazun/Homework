@@ -31,7 +31,13 @@ class MovieService {
                     { Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MWI1YmI2YTVkNjIxYmJlNTNmOWE4ZGRiNzZjYTJiNyIsInN1YiI6IjYwMDNmNDBlYTY3MjU0MDAzZjEyODFjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.77vOg9uGfxt8JbNX7snDGv2XttSayumrjdDgoXbxyMs'} })
             .then(el => el.json())
     }
+
+    async getSearchByGenre(genreId) {
+    return await fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${genreId}`,
+        {headers:
+                { Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MWI1YmI2YTVkNjIxYmJlNTNmOWE4ZGRiNzZjYTJiNyIsInN1YiI6IjYwMDNmNDBlYTY3MjU0MDAzZjEyODFjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.77vOg9uGfxt8JbNX7snDGv2XttSayumrjdDgoXbxyMs'} })
+        .then(el => el.json())
+    }
 }
 
 export const moviesService = new MovieService();
-

@@ -5,6 +5,7 @@ import {FilmItem} from "./FilmItem";
 import {Pagination} from "./Pagination";
 import {useDispatch, useSelector} from "react-redux";
 import {setGenres, setLoaded, setPagination} from "../../redux/action-creator";
+import {Sort} from "./Sort";
 
 export const Home = () => {
 
@@ -35,8 +36,11 @@ export const Home = () => {
         <div className={"div-home1"}>
             {loaded ?
                 <div>
-                    <div className={"div-home"}>{movie.map(el =>
-                        <FilmItem key={el.id} item={el}/>)}
+                    <div id={"childId"}>
+                        <div><Sort /></div>
+                        <div className={"div-home"}>{movie.map(el =>
+                            <FilmItem key={el.id} item={el}/>)}
+                        </div>
                     </div>
                     <div>
                         <Pagination fetchMovies={fetchMovies}/>

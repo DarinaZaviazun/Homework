@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+#childId {
+    display: flex;
+}
+
 .div-home {
     display: flex;
     flex-direction: row;
