@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
 import {Search} from "./components/Search";
 import {Provider} from "react-redux";
 import {store} from "./redux";
+import {FilmPage} from "./components/FilmPage";
 
 export default function App() {
 
@@ -20,6 +21,9 @@ export default function App() {
                             </Route>
                             <Route exact path="/search">
                                 <Search />
+                            </Route>
+                            <Route exact path="/movie/:id">
+                                <FilmPage />
                             </Route>
                         </Switch>
                     </PageLayout>

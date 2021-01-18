@@ -2,17 +2,27 @@ import {useDispatch, useSelector} from "react-redux";
 import {FilmItem} from "../Home/FilmItem";
 import {PaginationSearch} from "../Home/Pagination";
 import {moviesService} from "../services/MovieService";
-import {setLoaded, setPagination, setSearch} from "../../redux/action-creator";
+import {setGenres, setLoaded, setPagination, setSearch} from "../../redux/action-creator";
+import {useEffect} from "react";
 
 export const Search = () => {
 
-    const {search:{search}, loaded:{loaded}} = useSelector(el => el);
+    const {search:{search}, loaded:{loaded}, genres:{genres}} = useSelector(el => el);
     let word = search[2]
 
     const dispatch = useDispatch();
     let results = search.results;
     let pages = search.page;
     let total_pages = search.total_pages;
+
+    useEffect(() => {
+            genres.length === 0 && fetchGenres();
+    },[])
+
+    const fetchGenres = async () => {
+        const {genres} = await moviesService.getGenres();
+        dispatch(setGenres(genres));
+    }
 
     const fetchSearch = async (word, page) => {
         const data = await moviesService.getSearch(word, page);

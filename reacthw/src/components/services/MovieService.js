@@ -11,7 +11,7 @@ class MovieService {
     }
 
     async getMovieByID(id) {
-        return await fetch(this.url + `/4/movie/${id}`,
+        return await fetch(this.url + `/3/movie/${id}`,
             {headers:
                     { Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MWI1YmI2YTVkNjIxYmJlNTNmOWE4ZGRiNzZjYTJiNyIsInN1YiI6IjYwMDNmNDBlYTY3MjU0MDAzZjEyODFjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.77vOg9uGfxt8JbNX7snDGv2XttSayumrjdDgoXbxyMs'} })
             .then(el => el.json())
