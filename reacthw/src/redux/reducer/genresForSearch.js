@@ -13,8 +13,6 @@ export const genresForSearch = (state= initialState, action) => {
             if (updatedGenres.length === state.genresForSearch.length)
                 updatedGenres.push(action.payload);
 
-            console.log(updatedGenres)
-
             return {...state, genresForSearch: updatedGenres}
         }
 

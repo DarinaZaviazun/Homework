@@ -10,7 +10,7 @@ import {Sort} from "./Sort";
 export const Home = () => {
 
     const [movie, setMovieList] = useState([]);
-    const {genres:{genres}, loaded:{loaded}} = useSelector(el => el)
+    const {genres:{genres}, loaded:{loaded}, genresForSearch:{genresForSearch}} = useSelector(el => el)
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -18,10 +18,16 @@ export const Home = () => {
             fetchMovies();
         } catch (e){console.error(e)}
         genres.length === 0 && fetchGenres();
-    },[])
+    },[genresForSearch])
 
     const fetchMovies = async (page) => {
-        const data = await moviesService.getMovies(page);
+        let data = null;
+        if (genresForSearch.length > 0) {
+            data = await moviesService.getSearchByGenre(genresForSearch.toString())
+        }
+        else {
+            data = await moviesService.getMovies(page);
+        }
         setMovieList(data.results);
         dispatch(setPagination([data.page, data.total_pages]));
         setTimeout(() => dispatch(setLoaded(true)), 500);
