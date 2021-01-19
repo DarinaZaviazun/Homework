@@ -53,6 +53,8 @@ a {
 
 .div-home-movie img {
     border-radius: 10px 10px 0 0;
+    height: 290px;
+    width: 200px;
 }
 
 .div-home-movie h4{

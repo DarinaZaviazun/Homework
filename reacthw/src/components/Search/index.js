@@ -28,7 +28,8 @@ export const Search = () => {
         const data = await moviesService.getSearch(word, page);
         dispatch(setPagination([data.page, data.total_pages, word]))
         dispatch(setSearch(data));
-        setTimeout(() => dispatch(setLoaded(true)), 500);
+        dispatch(setLoaded(true));
+        // setTimeout(() => dispatch(setLoaded(true)), 500);
     }
 
     return (

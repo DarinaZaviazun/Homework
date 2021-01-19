@@ -32,10 +32,20 @@
 }
 
 .genre-one:hover {
-    background-color: #d1f0e9;
+    background-color: #b6d6cf;
 }
 
-.choosen {
-    background-color: #bcdcd5;
+.genre-one-choosen {
+    background-color: #bbe0d9;
+    margin: 0 10px 5px 0;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    width: fit-content;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.genre-one-choosen:hover {
+    background-color: #b6d6cf;
 }
 
