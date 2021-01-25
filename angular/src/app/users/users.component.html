@@ -1,0 +1,8 @@
+<div *ngFor="let user of users">
+<app-user [user] = 'user' (bubblePost)="getBubblePost($event)"></app-user>
+</div>
+
+<div *ngFor="let post of posts">
+  <app-posts [post]="post"></app-posts>
+</div>
+
