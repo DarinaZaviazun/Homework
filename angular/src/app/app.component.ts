@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {PostService} from '../services/post.service';
+import {IPost} from '../interfaces/postInterface';
 
 
 @Component({
@@ -7,6 +10,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-title = 'this is main page';
+export class AppComponent implements OnInit{
+  private posts: IPost[];
+  post: IPost;
+constructor(private postService: PostService) {
+}
+  ngOnInit(): void {
+    this.postService.getPosts().subscribe(value => this.posts = value);
+  }
+  getBubblePost(post): void{
+  this.post = post;
+  }
 }

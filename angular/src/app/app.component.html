@@ -1,1 +1,7 @@
-<app-cars></app-cars>
+<div *ngIf="post" [class.choosen] = 'true'>
+  Your choise:
+{{post?.id}} - {{post?.title}}
+</div>
+<div *ngFor="let post of posts">
+  <app-post [post] = post (bubblePost)="getBubblePost($event)"></app-post>
+</div>
