@@ -11,14 +11,15 @@ import {ICar} from '../interfaces/carInterface';
 export class CarInfoComponent implements OnInit {
   cars = cars;
   id: number;
-  carCh: ICar;
+  carCh: any;
   constructor(private activatedRoute: ActivatedRoute) {
   }
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(value => this.id = value.id);
-    console.log(this.id);
+    this.activatedRoute.params.subscribe(value => {
+      this.id = value.id;
+      this.carCh = cars.filter(value1 => value1.id == this.id);
+    });
 
-    const carCh = cars.filter(value => console.log(value.id === this.id));
   }
 
 }

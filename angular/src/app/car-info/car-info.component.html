@@ -1,5 +1,8 @@
 <div *ngIf="id">
-  lol
-  {{carCh}}
-
+  <hr>
+  You choose:
+  <p *ngIf="carCh">{{carCh[0].id}} - {{carCh[0].color}} - {{carCh[0].model}} -
+    {{carCh[0].horsepower}}hp - {{carCh[0].year}} year - owner: {{carCh[0].owner}}
+  </p>
 </div>
+
