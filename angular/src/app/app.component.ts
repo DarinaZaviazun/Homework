@@ -9,6 +9,4 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'this is users page';
-
-
 }
