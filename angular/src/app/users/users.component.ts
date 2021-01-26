@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {IUser} from '../../interfaces/user-interface';
+import {IUser} from '../interfaces/user-interface';
 import {HttpClient} from '@angular/common/http';
-import {UserService} from '../../services/user.service';
-import {IPost} from '../../interfaces/post-interface';
+import {UserService} from '../services/user.service';
+import {IPost} from '../interfaces/post-interface';
 
 @Component({
   selector: 'app-users',

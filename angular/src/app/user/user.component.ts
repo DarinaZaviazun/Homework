@@ -1,7 +1,7 @@
 import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
-import {IUser} from '../../interfaces/user-interface';
-import {PostService} from '../../services/post.service';
-import {IPost} from '../../interfaces/post-interface';
+import {IUser} from '../interfaces/user-interface';
+import {PostService} from '../services/post.service';
+import {IPost} from '../interfaces/post-interface';
 
 
 @Component({
