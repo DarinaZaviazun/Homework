@@ -12,7 +12,7 @@ import {IPost} from '../../interfaces/post-interface';
 export class UsersComponent implements OnInit {
   users: IUser[];
   constructor(private userService: UserService) { }
-  private posts: IPost[];
+  posts: IPost[];
   post: IPost;
   ngOnInit(): void {
     this.userService.getUsers().subscribe(value => this.users = value);
