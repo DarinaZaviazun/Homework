@@ -15,11 +15,9 @@ export class UserComponent implements OnInit {
   user: IUser;
   @Output()
   bubblePost = new EventEmitter();
-  constructor(private postService: PostService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  showposts(id: number): void {
-    this.postService.getPosts(id).subscribe(value => this.bubblePost.emit(value));
-  }
+
 }
