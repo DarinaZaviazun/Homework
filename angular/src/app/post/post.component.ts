@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {IPost} from '../../interfaces/postInterface';
+import {IPost} from '../interfaces/post-interface';
 
 @Component({
   selector: 'app-post',
@@ -10,7 +10,7 @@ export class PostComponent implements OnInit {
   @Input()
   post: IPost;
   @Output()
-  bubblePost = new EventEmitter();
+  bubblePost = new EventEmitter<IPost>();
   constructor() { }
 
   ngOnInit(): void {

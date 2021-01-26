@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {PostService} from '../services/post.service';
-import {IPost} from '../interfaces/postInterface';
+import {PostService} from './services/post.service';
+import {IPost} from './interfaces/post-interface';
 
 
 @Component({
