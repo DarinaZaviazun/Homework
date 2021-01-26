@@ -11,9 +11,9 @@ import {IPost} from '../interfaces/post-interface';
 })
 export class UsersComponent implements OnInit {
   users: IUser[];
-  constructor(private userService: UserService) { }
   posts: IPost[];
   post: IPost;
+  constructor(private userService: UserService) { }
   ngOnInit(): void {
     this.userService.getUsers().subscribe(value => this.users = value);
   }

@@ -13,8 +13,6 @@ export class UserComponent implements OnInit {
   posts: IPost[];
   @Input()
   user: IUser;
-  @Output()
-  bubblePost = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
