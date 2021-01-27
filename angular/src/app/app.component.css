@@ -1,0 +1,21 @@
+.header1 {
+ height: 100px;
+  background-color: lavender;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+button {
+  height: 50px;
+  width: 100px;
+  margin: 25px 100px 0 100px;
+  background-color: darkseagreen;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
