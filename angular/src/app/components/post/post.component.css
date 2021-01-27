@@ -1,0 +1,17 @@
+button {
+  height: 30px;
+  margin-left: 30px;
+  background-color: darkseagreen;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.posts {
+  margin-left: 20px;
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+}
