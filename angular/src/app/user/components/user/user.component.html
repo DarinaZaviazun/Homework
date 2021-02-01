@@ -1,0 +1,5 @@
+<div>detailed information about user</div>
+
+<div *ngIf="user">
+  {{user.id}} -- {{user.name}} - {{user.email}} -- {{user.address.city}} - {{user.address.street}} - {{user.phone}}
+</div>
