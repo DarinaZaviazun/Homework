@@ -1,0 +1,15 @@
+.header1 {
+  height: 50px;
+  background-color: orange;
+
+}
+
+.header1 ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.header1 ul li{
+  margin-right: 20px;
+  text-decoration: none;
+}
