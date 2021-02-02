@@ -1,0 +1,21 @@
+<div *ngIf="!flag" [class.login]="true">
+  <form [formGroup]="loginForm" (ngSubmit)="action()">
+    <div>
+      <input placeholder="name" [formControl]="name">
+    </div>
+    <div>
+      <input placeholder="password" [formControl]="password">
+    </div>
+<!--    // todo if-->
+    <div *ngIf="this.loginForm.value">
+      login or password are incorrect!
+    </div>
+    <div>
+      <button>Login</button>
+    </div>
+  </form>
+</div>
+
+<div *ngIf="flag">
+  отобразим всех юзеров тут
+</div>
