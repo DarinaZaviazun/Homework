@@ -19,7 +19,6 @@ import {HeaderComponent} from './header/header.component';
       {path: '', redirectTo: 'auth/login', pathMatch: 'full' },
       {path: 'auth/login', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)},
       {path: 'auth/register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule)},
-      {path: 'auth/login/main/users', redirectTo: 'main/users'},
       {path: 'main/users', component: UsersComponent}
     ])
   ],

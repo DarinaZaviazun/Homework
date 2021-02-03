@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   action(): void {
     this.user = this.loginForm.value;
     this.checkUser = users.find(value => value.name === this.user.name && value.password === this.user.password);
-    if (this.checkUser) { this.router.navigateByUrl('main/users'); }
+    if (this.checkUser) { this.router.navigateByUrl('/main/users'); }
     else {
       this.flag = true;
     }
