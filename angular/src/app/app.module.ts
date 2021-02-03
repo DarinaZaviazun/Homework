@@ -5,22 +5,23 @@ import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {UsersComponent} from './users/users.component';
 import {HeaderComponent} from './header/header.component';
+import {HeaderModule} from './header/header.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     UsersComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path: '', redirectTo: 'auth/login', pathMatch: 'full' },
+      {path: '', redirectTo: 'auth/login', pathMatch: 'full'},
       {path: 'auth/login', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)},
       {path: 'auth/register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule)},
       {path: 'main/users', component: UsersComponent}
-    ])
+    ]),
+    HeaderModule
   ],
   providers: [
   ],

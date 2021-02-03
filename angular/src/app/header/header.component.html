@@ -1,10 +1,18 @@
-<div [class.header1] = true >
+<div *ngIf="!user" [class.header1] = true >
   <ul>
     <li>
       <a [routerLink]="['auth', 'login']">Login</a>
     </li>
     <li>
       <a [routerLink]="['auth', 'register']">Register</a>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="user" [class.header1] = true >
+  <ul>
+    <li>
+      {{user.name}}
     </li>
   </ul>
 </div>

@@ -28,7 +28,6 @@ export class RegisterComponent implements OnInit {
   flag: boolean;
 
   action(): void {
-    console.log(this.registerForm);
     users.push(this.registerForm.value);
     this.router.navigateByUrl('/auth/login');
   }

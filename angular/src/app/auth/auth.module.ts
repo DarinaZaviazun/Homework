@@ -5,6 +5,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {HeaderModule} from '../header/header.module';
 
 
 
@@ -15,6 +16,7 @@ import {HttpClientModule} from '@angular/common/http';
     AuthRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    HeaderModule,
   ],
   providers: [
   ],
