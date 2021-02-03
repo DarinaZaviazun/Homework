@@ -1,1 +1,16 @@
-<p>register works!</p>
+
+<div [class.login]="true">
+  <form [formGroup]="registerForm" (ngSubmit)="action()">
+    <div>
+      <input placeholder="name" [formControl]="name">
+    </div>
+    <div>
+      <input placeholder="password" [formControl]="password">
+    </div>
+
+    <div>
+      <button>Register</button>
+    </div>
+  </form>
+</div>
+

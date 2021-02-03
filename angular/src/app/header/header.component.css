@@ -11,5 +11,6 @@
 
 .header1 ul li{
   margin-right: 20px;
+  margin-left: 20px;
   list-style-type: none;
 }

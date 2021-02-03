@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {users} from '../../database/usersDB';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,6 @@ import {users} from '../../database/usersDB';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
 
   name = new FormControl('', [
     Validators.required,
@@ -27,18 +27,16 @@ export class LoginComponent implements OnInit {
   flag: boolean;
 
   action(): void {
-    console.log(this.loginForm);
-    let flag;
     this.user = this.loginForm.value;
     this.checkUser = users.find(value => value.name === this.user.name && value.password === this.user.password);
-    if (!!this.checkUser) {
-     flag = true;
+    if (this.checkUser) { this.router.navigateByUrl('main/users'); }
+    else {
+      this.flag = true;
     }
   }
 
-  constructor() {
+  constructor(private router: Router) {
   }
-
   ngOnInit(): void {
   }
 }
