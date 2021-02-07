@@ -25,6 +25,6 @@ export class CreateComponent implements OnInit {
     this.carService.create(form.getRawValue()).subscribe(val => {
       console.log(val);
       this.router.navigate(['cars']);
-    }, this.error = error.error);
+    }, this.error = error.name);
   }
 }

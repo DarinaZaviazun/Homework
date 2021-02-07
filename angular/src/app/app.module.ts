@@ -5,7 +5,21 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { CarsComponent } from './components/main/cars/cars.component';
 import { CreateComponent } from './components/main/create/create.component';
-import {RouterModule} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+
+const routes: Routes = [
+  {
+    path: '', component: MainComponent, children: [
+      {path: '', redirectTo: 'cars', pathMatch: 'full'},
+      {path: 'cars', component: CarsComponent},
+      {path: 'create', component: CreateComponent}
+    ]
+  }
+];
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +30,9 @@ import {RouterModule} from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule.forRoot(routes),
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
