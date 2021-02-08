@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  API: 'http://192.168.88.31:8000'
+  API: 'http://192.168.88.253/'
+  // Api for homework http://92.253.239.109
 };
 
 /*
