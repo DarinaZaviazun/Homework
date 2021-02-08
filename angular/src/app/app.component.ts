@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {DataService} from './services';
 
 
 @Component({
@@ -8,6 +9,9 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'this is users page';
-
+  constructor(public dataService: DataService) {
+  }
+  increment(): void{
+    this.dataService.changeCounter();
+  }
 }
