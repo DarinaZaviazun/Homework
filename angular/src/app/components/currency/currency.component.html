@@ -1,0 +1,9 @@
+<button (click)="getPrevious()">Previous</button>
+<h2 *ngIf="currencies">{{currencies[0].exchangedate}}</h2>
+<div *ngIf="currencies">
+  <div *ngFor="let curren of currencies">
+    {{curren.exchangedate}}
+    {{curren.txt}}
+    {{curren.rate}}
+  </div>
+</div>
