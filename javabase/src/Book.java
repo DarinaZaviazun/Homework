@@ -4,6 +4,15 @@ public class Book {
     private String color;
     private boolean present;
 
+    public Book(){}
+
+    public Book(int pages, String author, String color, boolean present) {
+        this.pages = pages;
+        this.author = author;
+        this.color = color;
+        this.present = present;
+    }
+
     public int getPages() {
         return pages;
     }
@@ -33,15 +42,6 @@ public class Book {
     }
 
     public void setPresent(boolean present) {
-        this.present = present;
-    }
-
-    public Book(){}
-
-    public Book(int pages, String author, String color, boolean present) {
-        this.pages = pages;
-        this.author = author;
-        this.color = color;
         this.present = present;
     }
 

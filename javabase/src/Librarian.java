@@ -4,6 +4,16 @@ public class Librarian {
     private boolean glasses;
     private double salary;
 
+    public Librarian(){}
+
+    public Librarian(int age, String name, boolean glasses, double salary) {
+        this.age = age;
+        this.name = name;
+        this.glasses = glasses;
+        this.salary = salary;
+    }
+
+
     public int getAge() {
         return age;
     }
@@ -36,16 +46,7 @@ public class Librarian {
         this.salary = salary;
     }
 
-    public Librarian(){}
-
-    public Librarian(int age, String name, boolean glasses, double salary) {
-        this.age = age;
-        this.name = name;
-        this.glasses = glasses;
-        this.salary = salary;
-    }
-
-    @Override
+ @Override
     public String toString() {
         return "Librarian: " +
                 "age = " + age +
