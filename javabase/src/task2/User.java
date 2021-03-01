@@ -1,10 +1,10 @@
 package task2;
 
 public class User {
-    int id;
-    String name;
-    int age;
-    Sex sex;
+    private int id;
+    private String name;
+    private int age;
+    private Sex sex;
 
     public User() {
     }

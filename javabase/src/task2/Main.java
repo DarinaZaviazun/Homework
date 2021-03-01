@@ -28,15 +28,15 @@ public class Main {
         list.add(user10);
 
         for (User user : list) {
-            if (user.id % 2 == 0) System.out.println(user);
+            if (user.getId() % 2 == 0) System.out.println(user);
         }
         System.out.println("------------");
         for (User user : list) {
-            if (user.name.length() > 5) System.out.println(user);
+            if (user.getName().length() > 5) System.out.println(user);
         }
         System.out.println("------------");
         for (User user : list) {
-            if (user.sex.equals(Sex.FEMALE)) System.out.println(user);
+            if (user.getSex().equals(Sex.FEMALE)) System.out.println(user);
         }
     }
 }
