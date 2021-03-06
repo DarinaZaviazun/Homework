@@ -2,10 +2,8 @@ package com.example.calculator.models;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
 
 @Entity
 @NoArgsConstructor
@@ -29,4 +27,7 @@ public class Example {
         this.b = b;
         this.result = result;
     }
+
+
+
 }

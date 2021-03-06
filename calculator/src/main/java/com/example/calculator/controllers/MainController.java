@@ -30,6 +30,9 @@ public class MainController {
             case "mult":
                 exDAO.save(new Example(a, action, b, a * b + ""));
                 return "a * b = " + (a * b);
+            case "show":
+                System.out.println(exDAO.examples());
+                return exDAO.examples().toString();
             default:
                 return "ERROR";
         }
