@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-index.html
+
 <!--    <form action="/saveNew" method="get">-->
 <!--        <input type="text" name="username">-->
 <!--        <input type="text" name="userage">-->
 <!--        <button>save</button>-->
 <!--    </form>-->
 
-    <form action="/saveClient" method="get">
-        <input type="text" name="username">
-        <button>save</button>
-    </form>
+<!--    <form action="/saveClient" method="get">-->
+<!--        <input type="text" name="username">-->
+<!--        <button>save</button>-->
+<!--    </form>-->
+
+<form action="/saveCar" method="post">
+    Model <br/>
+    <input type="text" name="model"><br/>
+    Horse power <br/>
+    <input type="text" name="horsepower"> <br/>
+    Original Country <br/>
+    <input type="text" name="originalCountry"> <br/>
+    <button>save</button>
+</form>
 </body>
 </html>
