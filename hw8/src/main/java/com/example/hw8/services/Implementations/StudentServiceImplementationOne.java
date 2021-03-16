@@ -37,9 +37,9 @@ public class StudentServiceImplementationOne implements StudentService {
     }
 
     @Override
-    public Student updateOne(int id, String newName, int age) {
+    public Student updateOne(int id, String name, int age) {
         Student instance = studentDAO.getOne(id);
-        instance.setName(newName);
+        instance.setName(name);
         instance.setAge(age);
         return studentDAO.save(instance);
     }

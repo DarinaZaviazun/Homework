@@ -24,18 +24,19 @@ public class StudentController {
         return studentService.findAll();
     }
 
-    @PostMapping("/find/{id}")
+    @PostMapping("/{id}/find")
     public Student findOne(@PathVariable int id){
         return studentService.findOne(id);
     }
 
-    @PostMapping("/delete/{id}")
+    @PostMapping("/{id}/delete")
     public void deleteOne(@PathVariable int id){
         studentService.deleteOne(id);
     }
 
-    @PostMapping("/update/{id}")
+    @PostMapping("/{id}/update")
     public void update(@PathVariable int id, @RequestParam String name, @RequestParam int age){
+        System.out.println(name);
         studentService.updateOne(id, name, age);
     }
 }
