@@ -1,5 +1,6 @@
 package com.example.hw8.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -31,8 +32,7 @@ public class User {
     )
     private List<Car> cars = new ArrayList<>();
 
-    public User(String name, List<Car> cars){
+    public User(String name){
         this.name = name;
-        this.cars = cars;
     }
 }
