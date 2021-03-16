@@ -22,9 +22,9 @@ public class PainterController {
     }
     @GetMapping("/savePwP")
     public void savePwP(){
-        Painter painter = new Painter("Federico");
-        Picture picture = new Picture("Buton");
-        Picture picture1 = new Picture("Alyaska");
+        Painter painter = new Painter("Robert");
+        Picture picture = new Picture("Balet");
+        Picture picture1 = new Picture("Rodina");
         List<Picture> pictures = new ArrayList<>();
         pictures.add(picture);
         pictures.add(picture1);

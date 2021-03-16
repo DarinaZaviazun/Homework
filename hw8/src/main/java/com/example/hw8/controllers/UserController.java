@@ -18,12 +18,7 @@ import java.util.List;
 public class UserController {
     UserDAO userDAO;
 
-    @GetMapping
-    public List<User> showall(){
-        return userDAO.findAll();
-    }
-
-    @GetMapping("/saveWP")
+    @GetMapping("/save")
     public void save(){
         User user = new User();
         user.setName("Dasha");
@@ -32,6 +27,11 @@ public class UserController {
         productList.add(new Product("watermelon"));
         user.setProducts(productList);
         userDAO.save(user);
+    }
+
+    @GetMapping
+    public List<User> showall(){
+        return userDAO.findAll();
     }
 
     @GetMapping("/saveWC")
@@ -43,6 +43,6 @@ public class UserController {
         cars.add(new Car("volvo"));
         user.setCars(cars);
         userDAO.save(user);
-    }
 
+    }
 }

@@ -1,6 +1,5 @@
 package com.example.hw8.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -21,7 +20,6 @@ public class Car {
     private String model;
 
     @ManyToMany(cascade = CascadeType.ALL, mappedBy = "cars")
-    @JsonIgnore
     private List<User> users = new ArrayList<>();
 
     public Car(String model) {
