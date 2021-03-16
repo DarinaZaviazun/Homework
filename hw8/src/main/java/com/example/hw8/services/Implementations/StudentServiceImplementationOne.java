@@ -34,7 +34,7 @@ public class StudentServiceImplementationOne implements StudentService {
 
     @Override
     public void deleteOne(int id) {
-        studentDAO.delete(studentDAO.getOne(id));
+        studentDAO.deleteById(id);
     }
 
     @Override
